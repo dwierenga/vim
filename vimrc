@@ -38,7 +38,7 @@ call plug#end()
 set background=dark
 colorscheme koehler
 set laststatus=2 noruler
-set statusline=[\ Buf:\ %n\]\ \ %F\ %r%q%m%=\ @%c\ ASCII:%b\ HEX:0x%B\|\ %y\ %l\ of\ %L\ 
+set statusline=[buf#\ %n\]\ \ %F\ %r%q%m%=ASCII:%b\ HEX:0x%B\|\ %y\ C:%c\ R:%l/%L\ 
 hi StatusLine ctermbg=4   " red background. the color names are wacky in my terminal. using the color numbers works fine.  :h cterm-colors
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
  
