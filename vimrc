@@ -68,8 +68,6 @@ let mapleader=" "
 " map \w to the window command
 nnoremap <Leader>w <C-w> 
 "jump to the previous/next buffer
-nnoremap <Leader>bp :bprev<CR>
-nnoremap <Leader>bn :bnext<CR>
 nnoremap <Leader>1 :buffer 1<CR>
 nnoremap <Leader>2 :buffer 2<CR>
 nnoremap <Leader>3 :buffer 3<CR>
