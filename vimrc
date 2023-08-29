@@ -81,7 +81,7 @@ nnoremap <Leader><S-Tab> :bprevious<CR>
 " use ctrl j/k to move a line up/down
 nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==
-nnoremap <leader>ev :e $MYVIMRC<CR>
+nnoremap <leader>M :e $MYVIMRC<CR>
 nnoremap == :Mru<CR>
 nnoremap __ :Lexplore<CR>
 nnoremap <Leader>e :Lexplore<CR>
