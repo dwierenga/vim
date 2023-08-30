@@ -1,9 +1,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " the basics 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible visualbell 
-filetype plugin on
-set number backspace=2 incsearch wildmenu wildoptions=pum wildmode=list,full showmatch
+set visualbell 
+set number wildmenu wildoptions=pum wildmode=list,full showmatch
 set hidden splitright splitbelow autochdir 
 set linebreak breakindent showbreak=⮑\  textwidth=120
 set shiftwidth=4 softtabstop=4 expandtab shiftround  
@@ -53,7 +52,6 @@ let g:golden_ratio_exclude_nonmodifiable = 1    " do not automatically resize no
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set background=dark
 colorscheme koehler
-set laststatus=2 noruler
 set statusline=[buf#\ %n\]\ \ %F\ %r%q%m%=ASCII:%b\ HEX:0x%B\|\ %y\ C:%c\ R:%l/%L\ 
 hi StatusLine ctermbg=4   " red background. the color names are wacky in my terminal. using the color numbers works fine.  :h cterm-colors
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
