@@ -63,7 +63,7 @@ hi StatusLine ctermbg=4   " red background. the color names are wacky in my term
 " set mapleader to space
 let mapleader=" "
 " map \w to the window command
-nnoremap <Leader>w <C-w> 
+nnoremap <Leader>w <C-w>
 "jump to the previous/next buffer
 nnoremap <Leader>1 :buffer 1<CR>
 nnoremap <Leader>2 :buffer 2<CR>
