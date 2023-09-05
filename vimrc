@@ -2,7 +2,7 @@
 " the basics 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set visualbell 
-set number wildmenu wildoptions=pum wildmode=list,full showmatch
+set number wildmenu wildoptions=pum wildmode=list,longest,full showmatch
 set hidden splitright splitbelow autochdir 
 set linebreak breakindent showbreak=⮑\  textwidth=120
 set shiftwidth=4 softtabstop=4 expandtab shiftround  
