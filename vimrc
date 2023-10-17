@@ -34,7 +34,6 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
 Plug 'tpope/vim-obsession'
-Plug 'tpope/vim-sensible'
 call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -92,4 +91,3 @@ au BufRead *.lst set filetype=sql
 " if the cursor is on "create_table", let 'gf' look for "create_table.sql" and "create_table.lst" also
 set suffixesadd+=.sql,.lst
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
