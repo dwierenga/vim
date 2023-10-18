@@ -5,9 +5,10 @@ set visualbell
 set number wildmenu wildoptions=pum wildmode=list,longest,full showmatch
 set hidden splitright splitbelow autochdir 
 set linebreak breakindent showbreak=⮑\  textwidth=120
-set shiftwidth=4 softtabstop=4 expandtab shiftround  
+set shiftwidth=4 softtabstop=4 expandtab shiftround
 set encoding=utf8
 let mapleader=" "
+set listchars=tab:\|_\|,precedes:<,nbsp:+,eol:√,trail:»
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
