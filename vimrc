@@ -1,7 +1,9 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " the basics 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible
 set visualbell 
+set laststatus=2 noruler
 set number wildmenu wildoptions=pum wildmode=list,longest,full showmatch
 set hidden splitright splitbelow autochdir 
 set linebreak breakindent showbreak=⮑\  textwidth=120
@@ -9,6 +11,7 @@ set shiftwidth=4 softtabstop=4 expandtab shiftround
 set encoding=utf8
 let mapleader=" "
 set listchars=tab:\|_\|,precedes:<,nbsp:+,eol:√,trail:»
+filetype plugin on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
