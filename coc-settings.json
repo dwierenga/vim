@@ -1,0 +1,8 @@
+{
+    "coc.preferences.formatOnSave": true,
+    "diagnostic.checkCurrentLine": true,
+    "diagnostic.virtualText": true,
+    "diagnostic.virtualTextCurrentLineOnly": false,
+    "diagnostic.locationlistUpdate": true,
+    "inlayHint.enable": true
+}
