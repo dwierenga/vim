@@ -12,6 +12,7 @@ set encoding=utf8
 let mapleader=" "
 set listchars=tab:\|_\|,precedes:<,nbsp:+,eol:√,trail:»
 filetype plugin on
+set mouse=a
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
