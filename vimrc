@@ -46,11 +46,17 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " colors and visual setup
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set background=dark
-colorscheme koehler
+set background=light
+colorscheme delek
 set statusline=[buf#\ %n\]\ \ %F\ %r%q%m%=ASCII:%b\ HEX:0x%B\|\ %y\ C:%c\ R:%l/%L\ 
-hi StatusLine ctermbg=4   " red background. the color names are wacky in my terminal. using the color numbers works fine.  :h cterm-colors
+hi StatusLine ctermbg=red   " :h cterm-colors
 let g:netrw_winsize = 35
+let g:netrw_liststyle=3
+set signcolumn=yes
+if has('gui')
+    hi Statusline guifg=#ffffff guibg=#ff0000
+    set guifont=hack_nerd_font_mono:h16
+endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
  
 
