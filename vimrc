@@ -84,6 +84,23 @@ vnoremap < <gv
 "For quick recordings just type qq to start recording, then q  to stop
 "to play back the recording you just type Q
 nnoremap Q @q
+
+"CoC
+let g:coc_global_extensions = ['coc-tsserver'] " CoC extension for typescript server
+" Remap keys for applying codeAction to the current line.
+nmap <leader>ac  <Plug>(coc-codeaction)
+" Apply AutoFix to problem on the current line.
+ nmap <leader>qf  <Plug>(coc-fix-current)
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+nmap <silent> <Leader><backspace> <Plug>(coc-diagnostic-prev-error)
+nmap <silent> <Leader><space> <Plug>(coc-diagnostic-next-error)
+" Add `:Format` command to format current buffer
+command! -nargs=0 Format :call CocActionAsync('format')
+nmap <Leader>F :Format<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -92,4 +109,25 @@ nnoremap Q @q
 au BufRead *.lst set filetype=sql
 " if the cursor is on "create_table", let 'gf' look for "create_table.sql" and "create_table.lst" also
 set suffixesadd+=.sql,.lst
+
+" NERDTree
+" Start NERDTree when Vim starts with a directory argument.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
+    \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
+
+" Refresh the current folder if any changes
+autocmd BufEnter NERD_tree_* | execute 'normal R'
+au CursorHold * if exists("t:NerdTreeBufName") | call <SNR>15_refreshRoot() | endif
+"Reload the window if directory is changed
+augroup DIRCHANGE
+    au!
+    autocmd DirChanged global :NERDTreeCWD
+augroup END
+"Close nerdtree automatically if it is the only window open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" automatically populate the location list with the Coc diagnostic results on buffer save
+autocmd BufWritePost * call timer_start(1000, { tid -> execute('execute "CocDiagnostics" | execute "botright lwindow" | execute "wincmd p"') })
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
