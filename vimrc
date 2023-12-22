@@ -73,8 +73,8 @@ nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==
 nnoremap <leader>M :e $MYVIMRC<CR>
 nnoremap == :Mru<CR>
-nnoremap __ :Lexplore<CR>
-nnoremap <Leader>e :Lexplore<CR>
+nnoremap __ :NERDTreeToggle<CR>
+nnoremap <Leader>e :NERDTreeToggle<CR>
 nnoremap ++ :ls<CR>:b<Space>
 nnoremap <Leader>b :ls<CR>:b<Space>
 "keeps the current visual block selection active after changing indent with
